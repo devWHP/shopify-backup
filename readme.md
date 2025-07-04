@@ -1,15 +1,15 @@
-# Shopify Metaobjects Export - Version 3
+# Shopify Metaobjects Export - Version 3 (Matrixify format)
 
-Ce script permet de sauvegarder dans un fichier CSV exploitable par l'app Matrixify les metaobjets dont les noms et les definitions sont paramétrés dans un fichier config.
+This script saves metaobjects whose names and definitions are configured in a configuration file to a CSV file that can be used by the Matrixify app.
 
-Il necessite :
-- une boutique Shopify Plus
-- une app configurée dont vous connaissez le token
-- node JS v14+ sur votre machine
+It requires:
+- a Shopify Plus store
+- a configured app whose token you know
+- Node JS v14+ on your machine
 
 ## Installation
 
-- créez le repertoire de votre projet et déposez y les fichiers du dépôt selon votre méthode préférée puis switchez sur ce répertoire
+- create your project directory and drop the repository files there using your preferred method, then switch to this directory
 
 ```bash
 npm install axios csv-writer dotenv
