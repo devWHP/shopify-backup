@@ -8,13 +8,13 @@ npm install axios csv-writer dotenv
 
 ## Configuration
 
-1. Copiez `.env.example` vers `.env` et configurez :
+1. Copy `.env.example` to `.env` and configure :
    ```
    SHOPIFY_DOMAIN=your-shop.myshopify.com
    SHOPIFY_ACCESS_TOKEN=shpat_xxx
    SHOPIFY_API_VERSION=2024-04
    ```
-2. Ajustez `config.json` selon vos besoins (type, order, objects).
+2. Adjust `config.json` as you need (type, order, objects).
 3. Ensure your private/custom app has scopes:
 - `read_products`
 - `read_metafields`
@@ -36,4 +36,4 @@ npm start
 ```
 
 
-Le CSV sera généré sous `output/metaobjects.csv`.
+The output of the CSV will be generated under `output/metaobjects.csv`.
