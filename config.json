@@ -1,0 +1,77 @@
+{
+  "type": "export",
+  "format": "CSV",
+  "use": "metaobjects",
+  "file": {
+    "name": "metaobjects",
+    "extension": "csv",
+    "delimiter": ","
+  },
+  "order": [
+    "GroupItem",
+    "GroupLevel",
+    "ProductGroup"
+  ],
+  "objects": [
+    {
+      "name": "ProductGroup",
+      "type": "PRODUCTGROUP",
+      "fields": {
+        "name": "SINGLE_LINE_TEXT",
+        "label": "SINGLE_LINE_TEXT",
+        "style": {
+          "type": "SINGLE_LINE_TEXT",
+          "allowed_values": [
+            "button",
+            "swatch",
+            "text",
+            "none"
+          ]
+        },
+        "levels": {
+          "type": "LIST.METAOBJECT_REFERENCE",
+          "metaobject_type": "GroupLevel"
+        },
+        "items": {
+          "type": "LIST.METAOBJECT_REFERENCE",
+          "metaobject_type": "GroupItem"
+        }
+      }
+    },
+    {
+      "name": "GroupLevel",
+      "type": "GROUPLEVEL",
+      "fields": {
+        "name": "SINGLE_LINE_TEXT",
+        "label": "SINGLE_LINE_TEXT",
+        "style": {
+          "type": "SINGLE_LINE_TEXT",
+          "allowed_values": [
+            "button",
+            "swatch",
+            "text",
+            "none"
+          ]
+        },
+        "guide": {
+          "type": "PAGE_REFERENCE"
+        },
+        "options": {
+          "type": "LIST.SINGLE_LINE_TEXT"
+        }
+      }
+    },
+    {
+      "name": "GroupItem",
+      "type": "GROUPITEM",
+      "fields": {
+        "name": "SINGLE_LINE_TEXT",
+        "label": "SINGLE_LINE_TEXT",
+        "key": "SINGLE_LINE_TEXT",
+        "product": {
+          "type": "PRODUCT_REFERENCE"
+        }
+      }
+    }
+  ]
+}
